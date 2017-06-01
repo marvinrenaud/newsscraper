@@ -1,0 +1,33 @@
+body {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#nav_bar {
+  background-color: #299934;
+}
+
+#nav_logo {
+  padding-left: 10px;
+}
+
+.parallax-container {
+  height: 250px;
+}
+
+#hero_image {
+  opacity: 0.5;
+}
+
+.parallax_text {
+  position: absolute;
+  z-index: 1;
+  color: #299934;
+  /*text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;*/
+  padding-left: 10px;
+}
+
+
+/*CSS for google font */
+/*
+font-family: 'Rajdhani', sans-serif;
+*/
