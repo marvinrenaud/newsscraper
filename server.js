@@ -3,6 +3,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
+var path = require("path");
 // Requiring our Note and Article models
 var Note = require("./models/Note.js");
 var Article = require("./models/Article.js");
@@ -23,7 +24,11 @@ app.use(bodyParser.urlencoded({
 }));
 
 // Make public a static dir
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, '/public')));
+
+// ROUTER
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
 // Database configuration with mongoose
 mongoose.connect("mongodb://localhost/newsscraper");
