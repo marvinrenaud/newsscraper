@@ -14,12 +14,10 @@ $(document).ready(function(){
       for (var i = 0; i < data.articles.length; i++) {
         console.log("for loop is running");
         // Display the apropos information on the page
-        $("#myArticles").append("<p data-id='" + data.articles[i]._id + "'>" + data.articles[i].title + "<br />" + data.articles[i].shortLink +
+        $("#myArticles").append("<p data-id='" + data.articles[i]._id + "'>" + data.articles[i].title + "<br />" + "<a href="+data.articles[i].shortLink+">" + data.articles[i].shortLink + "</a>"  +
         "<br/><hr class='style11'>" + "</p>");
       }
     // });
-  })
-
-
+  });
 
 });
