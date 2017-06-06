@@ -35,7 +35,8 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://localhost/newsscraper");
+mongoose.connect("mongodb://heroku_6p36r6m0:ohfom3am59h3kqg5aolj72hf6l@ds111262.mlab.com:11262/heroku_6p36r6m0");
+// mongoose.connect("mongodb://localhost/newsscraper");
 var db = mongoose.connection;
 
 // Show any mongoose errors
