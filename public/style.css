@@ -32,6 +32,20 @@ hr.style11 {
     border: 0;
 }
 
+.saveButton {
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.saveButton:hover {
+  background-color: #299934;
+  color: white;
+}
+
+h3 {
+  color: #299934;
+}
+
 
 /*CSS for google font */
 /*
