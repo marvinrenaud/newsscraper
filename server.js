@@ -39,7 +39,7 @@ mongoose.connect("mongodb://heroku_bwgb2h52:pil5orp5vc1j6gon7df4bcr5o9@ds113660.
 // mongoose.connect("mongodb://localhost/newsscraper");
 var db = mongoose.connection;
 
-// Show any mongoose errors
+// Show any mongoose errors...
 db.on("error", function(error) {
   console.log("Mongoose Error: ", error);
 });
