@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/marvinrenaud/newsscraper/issues"
   },
-  "homepage": "https://github.com/marvinrenaud/newsscraper#readme"
+  "homepage": "https://github.com/marvinrenaud/newsscraper#readme",
+  "engines": {
+  "node": "6.10.2"
+  }
 }
