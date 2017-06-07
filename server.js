@@ -20,7 +20,7 @@ mongoose.Promise = Promise;
 
 // Initialize Express
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 
 // Use morgan and body parser with our current app.
@@ -51,7 +51,7 @@ db.once("open", function() {
   console.log("Mongoose connection successful.");
 });
 
-// Listen on port
+// LISTENER
 app.listen(PORT, function() {
-  console.log("App running on port"+ PORT);
+  console.log("App listening on PORT: " + PORT);
 });
