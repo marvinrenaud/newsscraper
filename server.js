@@ -8,7 +8,7 @@ var path = require("path");
 // Requiring our Note and Article models
 var Note = require("./models/note.js");
 var Article = require("./models/article.js");
-var User = require("./models/User.js");
+var User = require("./models/user.js");
 
 // Our scraping tools
 var request = require("request");
